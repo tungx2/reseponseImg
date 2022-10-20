@@ -1,0 +1,125 @@
+@charset "utf-8";
+body{
+  font-family: "맑은 고딕",arial,sans-serif;
+  font-size: 12px;
+  color: #333;
+  position: relative;
+  z-index: 10;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+header{
+  width: 100%;
+  border-top: 3px solid #ff7c98;
+  background-image: url('../images/bg_header.gif');
+}
+#h_top,nav{
+  width: 1200px;
+  margin: 0px auto;
+}
+#h_top>h1{
+  width: 92px;
+  height: 92px;
+  margin: 0px auto;
+  padding: 15px 0px;
+}
+#h_bottom{
+  width: 100%;
+  height: 46px;
+  border-top: 1px solid #E2D9D6;
+  border-bottom: 1px solid #333;
+  background-color: #fff;
+  overflow: hidden;
+  position: absolute;
+  z-index: 20;
+}
+#h_bottom nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+#h_bottom .lnb, #h_bottom .gnb{
+  display: flex;
+  justify-content: space-around;
+}
+#h_bottom .lnb a, #h_bottom .gnb a{
+  text-transform: uppercase;
+}
+/* lnb */
+#h_bottom .lnb{width: 200px;}
+#h_bottom .lnb>li{
+  line-height: 46px;
+  padding-left: 15px;
+}
+#h_bottom .lnb>li>a{
+  font-size: 13px;
+  font-weight: bold;
+  color: #aaa;
+}
+#h_bottom .lnb li:first-child>a{color: #ff7c98;}
+
+/* gnb */
+#h_bottom .gnb{width: 1000px;}
+#h_bottom .gnb>li{
+  line-height: 46px;
+  text-align: center;
+  position: relative; /* 서브메뉴 기준 */
+}
+#h_bottom .gnb>li>a{
+  font-size: 13px;
+  font-weight: bold;
+  color: #3c0a0a;
+}
+/* sub */
+#h_bottom .gnb .sub li{line-height: 46px;}
+#h_bottom .gnb .sub li>a{transition: 0.2s;}
+#h_bottom .gnb .sub li:hover>a{
+  color: #ff7c98;
+}
+
+#h_bottom::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  position: absolute;
+  top: 40px;
+  transition: 0.3s;
+  opacity: 0;
+}
+#h_bottom:hover::after{
+  opacity: 1;
+}
+
+/* 메인서식 */
+main{overflow: hidden;}
+.m_slide{
+  /* width: 1600px; */
+  width: 100%;
+  /* height: 697px; */
+  margin: 0px auto;
+  position: relative;
+}
+.m_slide>ul{
+  display: flex;
+  /* width: 6400px; */
+  width: 400%; /*기준의 4배*/
+}
+.m_slide>ul> li{width: 100%;}
+.m_slide img{width: 100%;}
+.m_slide>i.fas{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+}
+.m_slide>i.fa-angle-left{left: 10px;}
+.m_slide>i.fa-angle-right{right: 10px;}
+
+i.fa-stop,i.fa-play{
+  padding: 20px;
+}
+

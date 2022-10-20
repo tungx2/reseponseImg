@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>베스킨라빈스 상단 헤더_메인 슬라이드 구현</title>
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./script/prefixfree.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="./script/main.js"></script>
+</head>
+<body>
+  <!-- 상단헤더영역 -->
+  <header>
+    <div id="h_top">
+      <h1>
+        <a href="index.html" title="메인페이지로 바로가기"><img src="./images/logo_baskinrobbins.png" alt="상단로고"></a>
+      </h1>
+    </div>
+    <div id="h_bottom">
+      <nav>
+        <ul class="lnb">
+          <li><a href="login.html" title="로그인">login</a></li>
+          <li><a href="join.html" title="회원가입">join</a></li>
+        </ul>
+
+        <ul class="gnb">
+          <li><a href="javascript:void(0)" title="이달의 맛">flavor of the month</a>
+            <ul class="sub">
+              <li><a href="javascript:void(0)"><img src="./images/img_monthly_fom_220930.png" alt="이달의 맛"></a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)" title="메뉴">menu</a>
+            <ul class="sub">
+              <li><a href="javascript:void(0)" title="아이스크림">아이스크림</a></li>
+              <li><a href="javascript:void(0)" title="아이스크림케이크">아이스크림케이크</a></li>
+              <li><a href="javascript:void(0)" title="음료">음료</a></li>
+              <li><a href="javascript:void(0)" title="커피">커피</a></li>
+              <li><a href="javascript:void(0)" title="디저트">디저트</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)" title="알레르기">영양 성분 및 알레르기</a>
+            <ul class="sub">
+              <li><a href="javascript:void(0)" title="아이스크림">아이스크림</a></li>
+              <li><a href="javascript:void(0)" title="음료">음료</a></li>
+              <li><a href="javascript:void(0)" title="커피">커피</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)" title="이벤트">event</a>
+            <ul class="sub">
+              <li><a href="javascript:void(0)" title="진행중인 이벤트">진행중이벤트</a></li>
+              <li><a href="javascript:void(0)" title="당첨자 발표">당첨자발표</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)" title="지점찾기">store</a>
+            <ul class="sub">
+              <li><a href="javascript:void(0)" title="매장찾기">매장찾기</a></li>
+              <li><a href="javascript:void(0)" title="고객센터">고객센터</a></li>
+              <li><a href="javascript:void(0)" title="단체주문">단체주문</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)" title="소개">about</a>
+            <ul class="sub">
+              <li><a href="javascript:void(0)" title="공지사항">공지사항</a></li>
+              <li><a href="javascript:void(0)" title="보도자료">보도자료</a></li>
+              <li><a href="javascript:void(0)" title="채용정보">채용정보</a></li>
+              <li><a href="javascript:void(0)" title="점포개설문의">점포개설문의</a></li>
+              <li><a href="javascript:void(0)" title="contact us">contact us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인콘텐츠영역 -->
+  <main>
+    <!-- 메인슬라이드 -->
+    <article class="m_slide">
+      <ul>
+        <li>
+          <a href="javascript:void(0)" title="슬라이드1">
+            <img src="./images/slide1.jpg" alt="슬라이드1">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" title="슬라이드2">
+            <img src="./images/slide2.png" alt="슬라이드2">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" title="슬라이드3">
+            <img src="./images/slide3.jpg" alt="슬라이드3">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" title="슬라이드4">
+            <img src="./images/slide4.png" alt="슬라이드4">
+          </a>
+        </li>
+      </ul>
+      <i class="fas fa-angle-left"></i>
+      <i class="fas fa-angle-right"></i>
+    </article>
+
+    <button><i class="fas fa-play"></i></button>
+    <button><i class="fas fa-stop"></i></button>
+
+  </main>
+
+  <!-- 하단푸터영역 -->
+  <footer>
+
+  </footer>
+
+</body>
+</html>
